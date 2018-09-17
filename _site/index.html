@@ -1,244 +1,323 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
-<head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>KorQuAD</title>
+    <meta name="description" content="The Korean Question Answering Dataset" />
 
-  <link rel="stylesheet" href="/assets/css/normalize.css"/>
-  <link rel="stylesheet" href="/assets/css/bulma.css"/>
-  <link rel="stylesheet" href="/assets/css/custom.css"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-
-  <!-- Icons -->
-  <link rel="shortcut icon" href="/assets/images/favicon.ico">
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-
-  <title>
+  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/materialize.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/main.css">
+    <link rel="canonical" href="http://localhost:4000/" />
+    <link rel="alternate" type="application/rss+xml" title="KorQuAD" href="/feed.xml" />
+  
     
-      Well, Hello There! &middot; Abhishek Nagekar's Blog
-    
-  </title>
-
 </head>
 
 
-<body>
+  <body>
 
-<section class="hero is-dark">
-  <div class="hero-body">
+    <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" class="brand-logo" href="/">KorQuAD</a>
+    
+    
+
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/">Home </a></li>
+            
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                          
+          </ul>
+
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="#">Home</a></li>
+                            
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+             
+          </ul>        
+
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+    <main>
+          <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-        <h1 class="title">
-          <span class="typewrite" data-period="2000" data-type='[ "hello", "namaste", "assalam o alaikum",
-          "sat srī akāl", "khammaghani", "hola", "bonjour", "nomoskaar", "guten tag", "kumusta", "salut", "nômoshkar"]'>
-            <span class="wrap"></span>
-          </span>
-        </h1>
-      <h4 class="subtitle" id="quote">
-      </h4>
+      <br><br>
+      <h1 class="header center orange-text">KorQuAD</h1>
+      <div class="row center">
+        <h5 class="header col s12 light"><p>The Korean Question Answering Dataset</p>
+</h5>
+      </div>
+        
+
+      <br><br>
+
     </div>
   </div>
-</section>
 
-<div class="main-container">
-  <div class="tile is-ancestor is-vertical">
-
-
-    <nav class="nav has-shadow">
-
-      <div class="nav-left">
-
-        <a href="/" class="nav-item">
-          <span class="icon">
-            <i class="fa fa-home" aria-hidden="true" title="Homepage"></i>
-          </span>
-        </a>
-
-        <a href="https://github.com/abhn" class="nav-item">
-          <span class="icon">
-            <i class="fa fa-github" aria-hidden="true" title="Github"></i>
-          </span>
-        </a>
-
-        <div class="nav-item" id="searchFieldNav">
-          <div class="field has-addons">
-            <p class="control">
-              <input class="input is-small" type="text" placeholder="Find an article" id="search-text">
-            </p>
-            <p class="control">
-              <a class="button is-dark is-small" onclick="searchHandler();">
-                Search
-              </a>
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="nav-right nav-menu" id='nav-menu'>
-        <a href="/archive" class="nav-item">Archive</a>
-        <a href="/tags" class="nav-item">Tags</a>
-      </div>
-
-      <span class="nav-toggle" id="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-    </nav>
-
-    <div class="tile is-parent">
-      <div class="tile is-8 is-child main">
-
-        <div class="box">
-    <h1 class="post-title">Well, Hello There!</h1>
-    <hr/>
-    <div class="content"><span class="post-text"><ul class="posts">
-    
-    <li class="post">
-        <small>17 Apr 2017</small>
-        <small><a style="color:grey" href="/2017/04/Lorem-Ipsum.html#disqus_thread"></a></small>
-        <br>
-        <a class="nice-title" href="/2017/04/Lorem-Ipsum.html">Lorem Ipsum</a>
-        <p class="nice-text">Lorem ipsum dolor sit amet, ut paulo aperiam signiferumque quo. Quaeque pertinacia mnesarchum te vel. Ei tollit habemus delectus mel, pro zril cetero adipiscing an. Eius aliquip legimus ad mea, vix te quod eripuit, munere doctus oporteat qui te. Dolore fierent nam ea. Eos ex tale commune moderatius, ei mel... <a href="/2017/04/Lorem-Ipsum.html">Read more!</a></p>
-    </li>
-    
-</ul>
-
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'nagekar';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script></span></div>
-</div>
-
-
-      </div>
-
-      <div class="tile is-4 is-child">
-        <div class="tile is-parent is-vertical sidebar">
-
-          <div class="tile is-child widget">
-
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title nice-title">
-                  Recent Posts
-                </p>
-              </header>
-              <div class="card-content">
-                <div class="content nice-text">
-                  <ul>
-                  
-                  <li><a href="/2017/04/Lorem-Ipsum.html">
-                    Lorem Ipsum
-                  </a></li>
-                  
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="tile is-child widget">
-
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title nice-title">
-                  Sponsored
-                </p>
-              </header>
-              <div class="card-content">
-                <div class="content nice-text">
-                  <img src="/assets/images/Dust_Bunny.jpg"/>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="tile is-child widget">
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title nice-title">
-                  Recommended Websites
-                </p>
-              </header>
-              <div class="card-content">
-                <div class="content nice-text">
-                  <ul>
-                    <li>
-                      <a href="https://xkcd.com">xkcd</a>
-                    </li>
-                    <li>
-                      <a href="http://commitstrip.com">Commit Strip</a>
-                    </li>
-                    <li>
-                      <a href="http://www.smbc-comics.com">SMBC Comics</a>
-                    </li>
-                    <li>
-                      <a href="https://blog.codinghorror.com">Coding Horror</a>
-                    </li>
-                    <li>
-                      <a href="http://waitbutwhy.com">Wait Buy Why</a>
-                    </li>
-                    <li>
-                      <a href="https://simplysoch.wordpress.com/">Simply Soch</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-</div>
-
-<footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <p>
-        Some rights reserved.
-      </p>
-      <p>
-        Made with <i class="fa fa-heart"></i> and <a href="https://github.com/jgthms/bulma">Bulma</a>, <a href="https://jekyllrb.com/">Jekyll</a>. Hosted on <a href="https://github.com/">Github</a>
-      </p>
-      <p>
-        <a class="icon" href="https://github.com/abhn">
-          <i class="fa fa-github" title="Github"></i>
-        </a>
-        <a class="icon" href="https://in.linkedin.com/in/AbhishekNagekar">
-          <i class="fa fa-linkedin" title="Linkedin"></i>
-        </a>
-        <a class="icon" href="mailto:abhishek@nagekar.com">
-          <i class="fa fa-envelope" title="Email"></i>
-        </a>
-      </p>
-    </div>
-  </div>
-</footer>
+    <div class="section">
 
-<!-- js -->
-<script src="/assets/js/custom.js"></script>
-<script src="/assets/js/typewriter.js"></script>
-</body>
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">find_in_page</i></h2>
+            <h5 class="center">What is KorQuAD?</h5>
+
+            <p class="light">Stanford Question Answering Dataset (SQuAD) is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage, or the question might be unanswerable.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Leaderboard</h5>
+            <p class="light">SQuAD2.0 tests the ability of a system to not only answer reading comprehension questions, but also abstain when presented with a question that cannot be answered based on the provided paragraph. How will your system compare to humans on this task? </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m2"></div>
+
+        <div class="col s12 m8">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">keyboard</i></h2>
+            <h5 class="center">Getting Started</h5>
+
+            <p class="light">Stanford Question Answering Dataset (SQuAD) is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage, or the question might be unanswerable.</p>
+
+            <div class="center">
+              <a href="http://materializecss.com/getting-started.html" class="waves-effect waves-light btn" style="width:300px"><i class="material-icons left">file_download</i>Training Set (00MB)</a>
+            </div>
+
+            <br>
+
+            <div class="center">
+              <a href="http://materializecss.com/getting-started.html" class="waves-effect waves-light btn" style="width:300px"><i class="material-icons left" width="100">file_download</i>Dev Set (00MB)</a>
+            </div>
+
+            <p class="light">
+              To evaluate your models, we have also made available the evaluation script we will use for official evaluation, along with a sample prediction file that the script will take as input. To run the evaluation, use 
+              <code>python evaluate-v2.0.py [path_to_dev-v2.0] [path_to_predictions]
+              </code>.
+            </p>
+
+            <div class="center">
+              <a href="http://materializecss.com/getting-started.html" class="waves-effect waves-light btn" style="width:300px"><i class="material-icons left">file_download</i>Evaluation Script</a>
+            </div>
+
+            <br>
+
+            <div class="center">
+              <a href="http://materializecss.com/getting-started.html" class="waves-effect waves-light btn" style="width:300px"><i class="material-icons left" width="100">file_download</i>Sample Prediction File</a>
+            </div>
+
+            <p class="light">
+              Once you have a built a model that works to your expectations on the dev set, you submit it to get official scores on the dev and a hidden test set. To preserve the integrity of test results, we do not release the test set to the public. Instead, we require you to submit your model so that we can run it on the test set for you. Here's a tutorial walking you through official evaluation of your model:
+            </p>
+
+            <div class="center">
+              <a class="waves-effect waves-light btn" style="width:300px">Submission Tutorial</a>
+            </div>
+            
+
+            
+
+          </div>
+        </div>
+
+        <div class="col s12 m2"></div>
+
+      </div>
+
+    </div>
+
+    <div class="divider"></div>
+    <div class="section">
+        <h5>Leaderboard</h5> 
+        <div class="row">
+              <div class="col s12">
+                <table class="striped centered">
+                  <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Model</th>
+                        <th>EM</th>
+                        <th>F1</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Eclair</td>
+                      <td>0.87</td>
+                      <td>0.87</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Jellybean</td>
+                      <td>0.87</td>
+                      <td>0.87</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Lollipop</td>
+                      <td>0.87</td>
+                      <td>0.87</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Lollipop</td>
+                      <td>0.87</td>
+                      <td>0.87</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+        </div>
+    </div>
+
+
+      
+
+<!--     <div style="background: #ddd">
+    <div class="container last-post">
+    <section>
+        <h5>Latest Post</h5>
+        <ul class="collection">
+        
+        <li class="collection-item avatar">
+          
+          <div class="date-post">05/20</div>
+          <span class="title"><a class="post-link" href="/2016/05/20/welcome-to-jekyll.html">Welcome To Jekyll</a></span>
+          <p>
+             <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go...
+          </p>
+          <a href="/2016/05/20/welcome-to-jekyll.html" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+        </li>
+        
+        <li class="collection-item avatar">
+          
+          <div class="date-post">05/20</div>
+          <span class="title"><a class="post-link" href="/junk/2016/05/20/this-post-demonstrates-post-content-styles.html">This post demonstrates post content styles</a></span>
+          <p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum...
+          </p>
+          <a href="/junk/2016/05/20/this-post-demonstrates-post-content-styles.html" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+        </li>
+        
+        <li class="collection-item avatar">
+          
+          <div class="date-post">05/20</div>
+          <span class="title"><a class="post-link" href="/misc/2016/05/20/super-long-article.html">Some articles are just so long they deserve a really long title to see if things will break well</a></span>
+          <p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum...
+          </p>
+          <a href="/misc/2016/05/20/super-long-article.html" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+        </li>
+        
+        <li class="collection-item avatar">
+          
+          <div class="date-post">05/20</div>
+          <span class="title"><a class="post-link" href="/2016/05/20/my-example-post.html">My Example Post</a></span>
+          <p>
+             <p>Eos eu docendi tractatos sapientem, brute option menandri in vix,...
+          </p>
+          <a href="/2016/05/20/my-example-post.html" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+        </li>
+        
+        </ul>  
+    </section> -->
+
+  </div>
+
+</div>
+    </main>
+    
+      <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">LG CNS AI Research Team</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        </div>
+<!--         <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                Made by <a target="_blank" class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                <span style="text-align: right; float: right">
+                Copyright © 2018 <a href="http://www.lgcns.com" class="orange-text text-lighten-3">Kyoungmin Kim</a>. Powered by <a target="_blank" href="http://jekyllrb.com/" class="orange-text text-lighten-3">Jekyll</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+      
+    <!--  Scripts-->                                                                               
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/init.js"></script>
+
+  </body>
+
 </html>
